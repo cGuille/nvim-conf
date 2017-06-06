@@ -7,9 +7,6 @@ Plug 'jaywilliams/vim-vwilight'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
 syntax on
 set background=dark
 colorscheme vwilight
