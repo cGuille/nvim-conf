@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'jaywilliams/vim-vwilight'
 Plug 'rust-lang/rust.vim'
+Plug 'gabrielelana/vim-markdown'
 call plug#end()
 
 syntax on
@@ -66,6 +67,11 @@ function! NumberToggle()
     set rnu
   endif
 endfunc
+
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
 
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
