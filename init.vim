@@ -19,6 +19,7 @@ let base16colorspace=256
 " Map the leader key to SPACE
 let mapleader="\<SPACE>"
 
+set spelllang=fr,en     " Enable these languages for spell check.
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
 set showmode            " Show current mode.
